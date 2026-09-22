@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="entercode.js" defer></script>
+  <title>Enter Code</title>
+
+
+  <link rel="stylesheet" href="escape-room.css?v=2">
+</head>
+
+<body>
+  <h1>Enter Your Codes</h1>
+  <p>You should have three codes, one from each puzzle. Enter them below:</p>
+
+  <p>Enter code from Puzzle 1 here:</p>
+  <span class="input-wrap">
+    <input type="tel" id="numOne" maxlength="2">
+    <span id="status-numOne" class="status"></span>
+  </span>
+
+  <p>Enter code from Puzzle 2 here:</p>
+  <span class="input-wrap">
+    <input type="tel" id="numTwo" maxlength="2">
+    <span id="status-numTwo" class="status"></span>
+  </span>
+
+  <p>Enter code from Puzzle 3 here:</p>
+  <span class="input-wrap">
+    <input type="tel" id="numThree" maxlength="2">
+    <span id="status-numThree" class="status"></span>
+  </span>
+
+  <div id="congratsOverlay" class="overlay">
+    <div class="overlay-content">
+      <h1>You have solved all the puzzles correctly!</h1>
+
+      <img class="fireworks" src="Images/fireworks.gif" alt="Fireworks animation">
+
+      <p>Congratulations, you have saved the astronauts</p>
+      <p>Please hand back the tablet to the educator or the front desk</p>
+    </div>
+  </div>
+
+
+
+  <!-- <input type="tel" id="numFour" maxlength="2"> -->
+
+  <!-- <button id="Check">Check Code</button> -->
+
+  <button class="back" id="backButton">Go Back</button>
+  <div id="timer-container">
+    Time Remaining: <span id="timer-display">20:00</span>
+
+    <div id="timeOverlay" class="overlay">
+      <div class="overlay-content">
+        <h1>Time is up!</h1>
+        <p>Please hand the tablet back to the educator or front desk.</p>
+      </div>
+    </div>
+    
+</body>

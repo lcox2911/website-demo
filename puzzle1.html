@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="escape-room.css?v=2">
+  <script src="puzz1.js" defer></script>
+  <title>Puzzle 1</title>
+</head>
+
+<body>
+
+  <h1>Puzzle 1</h1>
+
+  <p class="description">
+    This puzzle focuses on Matariki me Puanga<br>
+    You will need to use the information in the galleries to answer the below<br>
+    You need to match up the picture, the description, and the word. Once you have selected your three options, click the 'submit' button at the bottom<br>
+    There are five of these to complete
+  </p>
+
+  <div class="game-container">
+    <div class="column" id="pictures">
+      <h3>Pictures</h3>
+    </div>
+    <div class="column" id="descriptions">
+      <h3>Descriptions</h3>
+    </div>
+    <div class="column" id="names">
+      <h3>Names</h3>
+    </div>
+  </div>
+
+  <div id="result"></div>
+  <button id="submitBtn">Submit</button>
+
+  <!-- Elements that must appear ABOVE overlays -->
+  <div id="number"></div>
+  <button class="back" id="backButton">Go Back</button>
+
+  <img id="hintBtn" src="Images/Hint.png" class="hintBtn" style="cursor: pointer;">
+  <div id="hint">
+    All of these are related to Matariki me Puanga. Head over to this part of the gallery and use the
+    screen there to help you find the answers.
+  </div>
+
+  <div id="timer-container">
+    Time Remaining: <span id="timer-display">20:00</span>
+  </div>
+
+  <!-- OVERLAYS MUST BE INSIDE BODY -->
+  <div id="overlay"></div>
+
+  <div id="timeOverlay" class="overlay">
+    <div class="overlay-content">
+      <h1>Time is up!</h1>
+      <p>Please hand the tablet back to the educator or front desk.</p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="puzz2.js" defer></script>
+  <!-- <style>#hint { display: none; margin-top: 10px; padding: 8px; background: #f0f0f0; border-left: 4px solid #4a90e2; }</style> -->
+  <title>Puzzle Two</title>
+
+  <script src="Timer.js" defer></script>
+  <link rel="stylesheet" href="escape-room.css?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Puzzle 2</h1>
+
+  <div id="subtitle"><br>Select 4 related words, then click “Submit Group”.</div>
+  <div id="game-container">
+   
+    <div id="message"></div>
+  </div>
+  </div>
+  <div id="grid"></div>
+  <div id="found-groups"></div>
+  </div>
+
+
+
+  <div id="number"></div>
+
+
+  <div id="controls">
+    <button id="shuffle-btn">Shuffle</button>
+    <button id="submit-btn">Submit Group</button>
+  </div>
+
+
+  <img id="hintBtn" src="Images/Hint.png" style="cursor: pointer;" class="hintBtn">
+
+
+  <!-- <button id="hintBtn">Show Hint</button> -->
+  <div id="hint"> There are four groups you need to find<br>
+    These are:<br>
+    <br>
+    <li>Whare (Houses) in the Star Compass</li>
+    <li>Phases of the moon in the Maramataka</li>
+    <li>Stars/Asterims shown on the Star Path projection</li>
+    <li>Planets in Te Reo Māori</li> <br>
+    Use the displays in the gallery to help you find the groups
+  </div>
+
+  <button class="back" id="backButton">Go Back</button>
+
+
+  <div id="timer-container">
+    Time Remaining: <span id="timer-display">20:00</span>
+  </div>
+
+  <div id="overlay"></div>
+
+ <div id="timeOverlay" class="overlay">
+      <div class="overlay-content">
+        <h1>Time is up!</h1>
+        <p>Please hand the tablet back to the educator or front desk.</p>
+      </div>
+    </div>
+</body>

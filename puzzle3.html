@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puzzle Three</title>
+
+  <script src="puzz3.js" defer></script>
+  <link rel="stylesheet" href="escape-room.css?v=2">
+</head>
+
+<body>
+
+  <div class="inst">
+    <h1>Puzzle 3</h1>
+
+  <p>You need to start this puzzle by going to the waiting area</p>
+  <p>Below is the Star Compass<br> You will need to use this to get the code from this puzzle</p>
+  <p>Make sure that the tablet is flat and the arrow is pointing towards the Tūhura Module</p>
+  </div>
+  
+  <div class="image-row"> 
+    <img id="compass" src="Images/Star_Compass.jpg"> 
+    </div> 
+
+  <div id="Qtn1">
+    <p>Your starting point is the waiting room.<br>The star Tautahi sets in <b>Manu, Whakararo</b>.<br> <br>Follow the path of the setting star and see what
+    you come to.</p>
+   <div class="center-wrap"> You will find a story about someone who slowed the sun, who were they? <input id="ans1" type="text" placeholder="Enter Answer Here"> <button id="ent1">Enter</button> </div>
+  </div>
+
+  <div id="Qtn2" style="display:none;">
+    <p><b>Remember to keep the tablet flat and the arrow pointing towards the Tūhura Module</b><br><br>
+      You now need to follow the path of Mahutonga, the Southern Cross, being upright.<br><br> Keep going and you will come across our galaxy.<br>
+      </p>
+       <div class="center-wrap">What is one of the Te Reo Māori names of our galaxy?<input id="ans2" type="text" placeholder="Enter Answer Here">
+    <button id="ent2">Enter</button></div>
+  </div>
+
+  <div id="Qtn3" style="display:none;">
+    <p><b>Remember to keep the tablet flat and the arrow pointing towards the Tūhura Module</b><br><br>
+      You head towards where Whanui (Vega) is rising, <b>Ngoi, Tokerau</b>.<br> Here you should find some information about navigation. <br>
+      
+    </p> 
+    <div class="center-wrap"> Who built his own waka and started teaching about the Star Compass again?<input id="ans3" type="text" placeholder="Enter Answer Here">
+    <button id="ent3">Enter</button></div>
+
+  </div>
+
+  <img id="hintBtn" src="Images/Hint.png" style="cursor: pointer;" class="hintBtn">
+
+  <div id="number"></div>
+
+   <div id="hint"> If you are struggling, make sure the tablet is flat and the arrow pointing towards the back of the building.<br><br>
+    Find the star on the star compass picture, and head in that direction until you find what you are looking for.<br><br>
+    You may have to go around objects, but make sure you get back onto the correct path!
+    
+  </div>
+
+
+  <button class="back" id="backButton">Go Back</button>
+  <div id="overlay"></div>
+
+  <div id="timer-container">
+    Time Remaining: <span id="timer-display">20:00</span>
+  </div>
+
+  <div id="timeOverlay" class="overlay">
+      <div class="overlay-content">
+        <h1>Time is up!</h1>
+        <p>Please hand the tablet back to the educator or front desk.</p>
+      </div>
+    </div>
+</body>

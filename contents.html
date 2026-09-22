@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="contentspage.js" defer></script>
+  <title>Puzzle Selector</title>
+
+
+  <link rel="stylesheet" href="escape-room.css?v=2">
+</head>
+
+<body>
+  <h2>Select one of the puzzles below.<br>
+    You can do these in any order</h2>
+
+  <button class="puz-btn" id="btn1">Puzzle 1</button>
+  <button class="puz-btn" id="btn2">Puzzle 2</button>
+  <button class="puz-btn" id="btn3">Puzzle 3</button>
+  <!-- <button class="puz-btn" id="btn4">Puzzle 4</button> -->
+
+  <p>Once you have completed all the puzzles and you have your code, click below to enter it</p>
+
+
+  <button class="enter_btn" id="enter_btn">Enter your code</button>
+
+  <div id="timer-container">
+    Time Remaining: <span id="timer-display">20:00</span>
+  </div>
+
+  <div id="timeOverlay" class="overlay">
+      <div class="overlay-content">
+        <h1>Time is up!</h1>
+        <p>Please hand the tablet back to the educator or front desk.</p>
+      </div>
+    </div>
+
+</body>
